@@ -19,7 +19,7 @@ Users should be able to:
 
 ### Links
 - Solution URL: (https://github.com/DanielaMichelle/interactive-rating-component-main)
-- Live Site URL: ()
+- Live Site URL: (https://danielamichelle.github.io/interactive-rating-component-main/)
 
 ### Built with
 - Semantic HTML5 markup
