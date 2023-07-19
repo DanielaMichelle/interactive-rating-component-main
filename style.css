@@ -1,0 +1,132 @@
+:root {
+    --orange: hsl(25, 97%, 53%);
+    --white: hsl(0, 0%, 100%);
+    --light-grey: hsl(217, 12%, 63%);
+    --medium-grey: hsl(216, 12%, 54%);
+    --dark-blue: hsl(213, 19%, 18%);
+    --very-dark-blue: hsl(216, 12%, 8%);
+    --overpass-font: 'Overpass';
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--overpass-font);
+}
+
+html {
+    /* 1rem = 10px */
+    font-size: 62.5%; 
+}
+
+body {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: var(--very-dark-blue);
+}
+
+.rating-component-main, .thank-you-component {
+    background-color: var(--dark-blue);
+    border-radius: 1.5rem;
+    padding: 3rem;
+    width: 40rem;
+}
+
+.thank-you-component {
+    text-align: center;
+}
+
+.thank-you-component img {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.thank-you-component-badge {
+    background-color: hsl(212.73deg 18.64% 23.14%);
+    color: var(--orange);
+    width: max-content;
+    margin: auto;
+    padding: 0.5rem 1.2rem;
+    border-radius: 5rem;
+}
+
+.rating-component-main__star {
+    background-color: hsl(212.73deg 18.64% 23.14%);
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    font-size: 1.5rem;
+    display: grid;
+    place-items: center;
+}
+
+.title {
+    margin-top: 3rem;
+    font-size: 2.8rem;
+    color: var(--white);
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.text {
+    font-size: 1.5rem;
+    color: var(--light-grey);
+    margin-bottom: 20px;
+    line-height: 2.5rem;
+}
+
+.rating-component-main--score {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    line-height: 5rem;
+    padding-bottom: 3rem;
+}
+
+.rating-component-main--score div{
+    background-color: hsl(212.73deg 18.64% 23.14%);
+    color: var(--light-grey);
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    font-size: 1.5rem;
+}
+
+.rating-component-main--score div:hover {
+    background-color: var(--orange);
+    color: var(--white);
+}
+
+.rating-component-main .rating-component-main--score .after-click {
+    background-color: var(--medium-grey);
+    color: var(--white);
+} 
+
+.rating-component-main--btn {
+    background-color: var(--orange);
+    border-radius: 50px;
+    color: white;
+    border: none;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    width: 100%;
+    font-weight: 700;
+}
+
+.rating-component-main--btn:hover {
+    background-color: white;
+    color: var(--orange);
+}
+
+@media (max-width: 500px) {
+    .rating-component-main, .thank-you-component {
+        width: fit-content;
+        margin: auto 5%;
+        padding: 2rem;
+    }
+}
